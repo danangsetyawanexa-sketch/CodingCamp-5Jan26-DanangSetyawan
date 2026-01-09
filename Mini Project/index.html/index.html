@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan Harian Danang</title>
+    <style>
+        /* CSS Langsung di sini supaya kamu nggak ribet banyak file */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f7;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .wadah-utama {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .header-danang {
+            background: linear-gradient(120deg, #007bff, #00c6ff);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header-danang h2 { margin: 0; font-size: 24px; }
+
+        .konten { padding: 20px; }
+
+        .input-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button#tambah {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            font-size: 13px;
+            color: #888;
+            border-bottom: 2px solid #eee;
+            padding: 10px;
+        }
+
+        td { padding: 15px 10px; border-bottom: 1px solid #eee; font-size: 14px; }
+
+        .status-tag {
+            background: #fff3cd;
+            color: #856404;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wadah-utama">
+        <div class="header-danang">
+            <h2>List Tugas Danang</h2>
+            <p style="font-size: 12px; opacity: 0.8;">Rencana Kerja Januari 2026</p>
+        </div>
+
+        <div class="konten">
+            <div class="input-box">
+                <input type="text" id="tugasBaru" placeholder="Mau ngerjain apa Danang?">
+                <button id="tambah">Simpan</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>TUGAS</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody id="listTabel">
+                    <tr>
+                        <td>Selesaikan Tugas HTML</td>
+                        <td><span class="status-tag">On Process</span></td>
+                    </tr>
+                    <tr>
+                        <td>Belajar CSS Dasar</td>
+                        <td><span class="status-tag">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="text-align: center; font-size: 11px; color: #bbb; margin-top: 20px;">
+                Dibuat oleh Danang untuk Tugas Mini Project Software Engineering Revou.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
